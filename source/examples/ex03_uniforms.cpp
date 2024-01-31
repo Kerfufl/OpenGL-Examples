@@ -20,8 +20,8 @@ class UniformsApplication : public our::Application {
     // Remember called once before game loop.
     void onInitialize() override {
         program.create();                                                                               // Create a "Program".
-        program.attach("assets/shaders/ex03_uniforms/quad.vert", GL_VERTEX_SHADER);                     // Read vertex shader file, compile it, and check for errors.
-        program.attach("assets/shaders/ex03_uniforms/uniform_color.frag", GL_FRAGMENT_SHADER);          // Read fragment shader file, compile it, and check for errors.
+        program.attach("../../../assets/shaders/ex03_uniforms/quad.vert", GL_VERTEX_SHADER);                     // Read vertex shader file, compile it, and check for errors.
+        program.attach("../../../assets/shaders/ex03_uniforms/uniform_color.frag", GL_FRAGMENT_SHADER);          // Read fragment shader file, compile it, and check for errors.
         program.link();                                                                                 // link to shaders together in the program.
 
         glGenVertexArrays(1, &vertex_array);            // Create a vertex array and save address in uint vertex array.
